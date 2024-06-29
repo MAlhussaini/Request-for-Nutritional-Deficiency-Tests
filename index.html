@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العناصر الغذائية والأعراض</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        ul {
+            margin-top: 20px;
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #FFFF00; /* Yellow background to highlight */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button onclick="showSection('nutrition')">جدول العناصر الغذائية</button>
+        <button onclick="showSection('symptoms')">الأعراض</button>
+    </div>
+
+    <div id="nutrition" class="section active">
+        <h1>جدول العناصر الغذائية</h1>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>العنصر الغذائي (Arabic)</th>
+                <th>Nutritional Element (English)</th>
+            </tr>
+            <tr class="highlight">
+                <td>1</td>
+                <td>فيتامين د</td>
+                <td>Vitamin D</td>
+            </tr>
+            <tr class="highlight">
+                <td>2</td>
+                <td>الزنك</td>
+                <td>Zinc</td>
+            </tr>
+            <tr class="highlight">
+                <td>3</td>
+                <td>الحديد</td>
+                <td>Iron</td>
+            </tr>
+            <tr class="highlight">
+                <td>4</td>
+                <td>فيتامين ب</td>
+                <td>Vitamin B (especially B12)</td>
+            </tr>
+            <tr class="highlight">
+                <td>5</td>
+                <td>البوتاسيوم</td>
+                <td>Potassium</td>
+            </tr>
+            <tr class="highlight">
+                <td>6</td>
+                <td>النحاس</td>
+                <td>Copper</td>
+            </tr>
+            <tr class="highlight">
+                <td>7</td>
+                <td>أوميغا-3</td>
+                <td>Omega-3</td>
+            </tr>
+            <tr class="highlight">
+                <td>8</td>
+                <td>فيتامين سي</td>
+                <td>Vitamin C</td>
+            </tr>
+            <tr class="highlight">
+                <td>9</td>
+                <td>المغنيسيوم</td>
+                <td>Magnesium</td>
+            </tr>
+            <tr class="highlight">
+                <td>10</td>
+                <td>اليود</td>
+                <td>Iodine</td>
+            </tr>
+            <tr class="highlight">
+                <td>11</td>
+                <td>الفولات</td>
+                <td>Folate</td>
+            </tr>
+            <tr class="highlight">
+                <td>12</td>
+                <td>الكالسيوم</td>
+                <td>Calcium</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>فيتامين أ</td>
+                <td>Vitamin A</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>فيتامين هـ</td>
+                <td>Vitamin E</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>فيتامين ك</td>
+                <td>Vitamin K</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>البيوتين (ب7)</td>
+                <td>Biotin (B7)</td>
+            </tr>
+            <tr class="highlight">
+                <td>17</td>
+                <td>السيلينيوم</td>
+                <td>Selenium</td>
+            </tr>
+            <tr class="highlight">
+                <td>18</td>
+                <td>الكولين</td>
+                <td>Choline</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="symptoms" class="section">
+        <h1>الأعراض</h1>
+        <ul>
+            <li>أنا دائمًا أشعر بتعب وخمول، حتى لو ما سويت شي مرهق.</li>
+            <li>نومي في الليل مو مريح، أصحى كثير ومرهق.</li>
+            <li>ذاكرتي ضعيفة وصعب أركز، وهذا يأثر على شغلي وحياتي اليومية.</li>
+            <li>أشعر بتوتر طول الوقت وعندي مشاكل في القولون العصبي.</li>
+            <li>وزني 96 كجم وطولي 164 سم، وأنا أعاني من السمنة وأحس أن الأعراض لها علاقة بهذا.</li>
+            <li>عندي ارتجاع مريئي يسبب لي حموضة وانزعاج في المعدة.</li>
+            <li>أشعر باكتئاب خفيف وأفكار حزينة تتكرر، ويأثر هذا على مزاجي وحياتي.</li>
+        </ul>
+        <p>سمعت أن بعض هذه الأعراض ممكن تكون بسبب نقص فيتامينات ومعادن مثل فيتامين د، الزنك، الحديد، فيتامين ب12، البوتاسيوم، الكالسيوم، والمغنيسيوم. أرجو منكم عمل تحاليل لهذه الفيتامينات والمعادن للتأكد من السبب.</p>
+        <p>شكرًا على تفهمكم ومساعدتكم.</p>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
